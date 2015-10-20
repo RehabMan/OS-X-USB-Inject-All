@@ -8,6 +8,7 @@ DefinitionBlock ("SSDT-UIAC.aml", "SSDT", 1, "hack", "UIAC", 0x00003000)
     Device(UIAC)
     {
         Name(_HID, "UIA00000")
+
         // override EH01 configuration to have only one port
         Name(RMCF, Package()
         {
@@ -27,3 +28,4 @@ DefinitionBlock ("SSDT-UIAC.aml", "SSDT", 1, "hack", "UIAC", 0x00003000)
     }
 }
 
+//EOF
