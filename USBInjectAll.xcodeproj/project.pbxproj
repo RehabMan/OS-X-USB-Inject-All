@@ -26,6 +26,7 @@
 		84C4CE431BD5EC37003BC8FE /* USBInjectAll_model_template.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USBInjectAll_model_template.plist; sourceTree = "<group>"; };
 		84C4CE441BD5EC37003BC8FE /* USBInjectAll_template-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "USBInjectAll_template-Info.plist"; sourceTree = "<group>"; };
 		84CACFB11BD6D37E00B41FBF /* SSDT-UIAC.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC.dsl"; sourceTree = "<group>"; };
+		ED0AD3E11BD725DC00B36B4B /* config_patches.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config_patches.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		0C4B237114598AD10080D960 = {
 			isa = PBXGroup;
 			children = (
+				ED0AD3E11BD725DC00B36B4B /* config_patches.plist */,
 				842548D51BD613B90021F757 /* README.md */,
 				84CACFB11BD6D37E00B41FBF /* SSDT-UIAC.dsl */,
 				844778DD16E7FD2100B27895 /* makefile */,
