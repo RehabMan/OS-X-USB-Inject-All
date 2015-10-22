@@ -306,7 +306,7 @@
 				<dict>
 					<key>port-count</key>
 					<data>
-					DwAAAA==
+					DQAAAA==
 					</data>
 					<key>ports</key>
 					<dict>
@@ -425,24 +425,6 @@
 							<key>port</key>
 							<data>
 							DQAAAA==
-							</data>
-						</dict>
-						<key>SSP5</key>
-						<dict>
-							<key>UsbConnector</key>
-							<integer>3</integer>
-							<key>port</key>
-							<data>
-							DgAAAA==
-							</data>
-						</dict>
-						<key>SSP6</key>
-						<dict>
-							<key>UsbConnector</key>
-							<integer>3</integer>
-							<key>port</key>
-							<data>
-							DwAAAA==
 							</data>
 						</dict>
 					</dict>

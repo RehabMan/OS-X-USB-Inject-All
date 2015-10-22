@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [[ "$1" == "clean" ]]; then
+    exit 0
+fi
+
 plist=./USBInjectAll/USBInjectAll-Info.plist
 plist_temp=/tmp/org_rehabman_USBInjectAll-Info.plist
 merge=./USBInjectAll_model_template.plist
