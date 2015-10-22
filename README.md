@@ -106,7 +106,7 @@ sudo cp -R Release/USBInjectAll.kext /Library/Extensions
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
-If you have a 9-series chipset XHC controller, 8086:8cb1, install XHCI-9-series.kext from the project as well.  The USB3 drivers will not load without this injector kext.
+If you have a 9-series chipset XHC controller, 8086:8cb1, install XHCI-9-series.kext from the project as well.  The USB3 drivers will not load without this injector kext.  Update: As of 10.11.1, this injector is no longer needed as direct support was added.  If you need it, go back in history: https://github.com/RehabMan/OS-X-USB-Inject-All/tree/706fea51222eb73343d347db10cf48500333a7bd
 
 Note: This kext assumes you already renamed EHC1->EH01 and EHC2->EH02.  It also assumes your XHCI controller is named XHC (not renamed to XHC1).  These names EH01/EH02/XHC are best to avoid conflicts with built-in port injectors for Apple computers.  Refer to config_patches.plist in this repo for the patches required (config_patches.plist/ACPI/DSDT/Patches).
 
