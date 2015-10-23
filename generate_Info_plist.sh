@@ -65,6 +65,13 @@ mergeModelData "Macmini7,1"
 # MacBook
 mergeModelData "MacBook8,1"
 
+# MacPro
+mergeModelData "MacPro3,1"
+mergeModelData "MacPro4,1"
+mergeModelData "MacPro5,1"
+mergeModelData "MacPro6,1"
+
+# check to see if it was updated...
 cksum_old=`md5 -q $plist`
 cksum_new=`md5 -q $plist_temp`
 if [[ $cksum_new != $cksum_old ]]; then
