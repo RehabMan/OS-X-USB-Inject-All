@@ -433,7 +433,7 @@
 				<dict>
 					<key>port-count</key>
 					<data>
-					FgAAAA==
+					GgAAAA==
 					</data>
 					<key>ports</key>
 					<dict>
@@ -527,7 +527,43 @@
 							CgAAAA==
 							</data>
 						</dict>
-						<key>SSP1</key>
+						<key>HS11</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							CwAAAA==
+							</data>
+						</dict>
+						<key>HS12</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DAAAAA==
+							</data>
+						</dict>
+						<key>HS13</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DQAAAA==
+							</data>
+						</dict>
+						<key>HS14</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DgAAAA==
+							</data>
+						</dict>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -536,7 +572,7 @@
 							EQAAAA==
 							</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -545,7 +581,7 @@
 							EgAAAA==
 							</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -554,7 +590,7 @@
 							EwAAAA==
 							</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -563,7 +599,7 @@
 							FAAAAA==
 							</data>
 						</dict>
-						<key>SSP5</key>
+						<key>SS05</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -572,13 +608,67 @@
 							FQAAAA==
 							</data>
 						</dict>
-						<key>SSP6</key>
+						<key>SS06</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>
 							FgAAAA==
+							</data>
+						</dict>
+						<key>SS07</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							FwAAAA==
+							</data>
+						</dict>
+						<key>SS08</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							GAAAAA==
+							</data>
+						</dict>
+						<key>SS09</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							GQAAAA==
+							</data>
+						</dict>
+						<key>SS10</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							GgAAAA==
+							</data>
+						</dict>
+						<key>USR1</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DwAAAA==
+							</data>
+						</dict>
+						<key>USR2</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							EAAAAA==
 							</data>
 						</dict>
 					</dict>
@@ -1533,6 +1623,135 @@
 			<key>model</key>
 			<string>MacBookPro12,2</string>
 		</dict>
+		<key>MacBookPro6,1-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro6,1</string>
+		</dict>
+		<key>MacBookPro6,1-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro6,1</string>
+		</dict>
+		<key>MacBookPro6,1-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro6,1</string>
+		</dict>
+		<key>MacBookPro6,2-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro6,2</string>
+		</dict>
+		<key>MacBookPro6,2-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro6,2</string>
+		</dict>
+		<key>MacBookPro6,2-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro6,2</string>
+		</dict>
+		<key>MacBookPro7,1-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro7,1</string>
+		</dict>
+		<key>MacBookPro7,1-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro7,1</string>
+		</dict>
+		<key>MacBookPro7,1-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>MacBookPro7,1</string>
+		</dict>
 		<key>MacBookPro8,1-EH01</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -2221,6 +2440,135 @@
 			<key>model</key>
 			<string>Macmini7,1</string>
 		</dict>
+		<key>iMac11,1-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,1</string>
+		</dict>
+		<key>iMac11,1-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,1</string>
+		</dict>
+		<key>iMac11,1-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,1</string>
+		</dict>
+		<key>iMac11,2-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,2</string>
+		</dict>
+		<key>iMac11,2-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,2</string>
+		</dict>
+		<key>iMac11,2-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,2</string>
+		</dict>
+		<key>iMac11,3-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,3</string>
+		</dict>
+		<key>iMac11,3-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,3</string>
+		</dict>
+		<key>iMac11,3-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>iMac11,3</string>
+		</dict>
 		<key>iMac12,1-EH01</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -2650,6 +2998,49 @@
 			<string>AppleUSBXHCIPCI</string>
 			<key>model</key>
 			<string>iMac16,2</string>
+		</dict>
+		<key>iMac17,1-EH01</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH01</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH01</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac17,1</string>
+		</dict>
+		<key>iMac17,1-EH02</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>ConfigurationName</key>
+			<string>EH02</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>EH02</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBEHCIPCI</string>
+			<key>model</key>
+			<string>iMac17,1</string>
+		</dict>
+		<key>iMac17,1-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>iMac17,1</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>

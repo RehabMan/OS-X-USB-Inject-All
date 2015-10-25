@@ -594,7 +594,7 @@
 				<key>8086_a12f</key>
 				<dict>
 					<key>port-count</key>
-					<data>FgAAAA==</data>
+					<data>GgAAAA==</data>
 					<key>ports</key>
 					<dict>
 						<key>HS01</key>
@@ -667,47 +667,117 @@
 							<key>port</key>
 							<data>CgAAAA==</data>
 						</dict>
-						<key>SSP1</key>
+						<key>HS11</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>CwAAAA==</data>
+						</dict>
+						<key>HS12</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>DAAAAA==</data>
+						</dict>
+						<key>HS13</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>DQAAAA==</data>
+						</dict>
+						<key>HS14</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>DgAAAA==</data>
+						</dict>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EQAAAA==</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EgAAAA==</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EwAAAA==</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>FAAAAA==</data>
 						</dict>
-						<key>SSP5</key>
+						<key>SS05</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>FQAAAA==</data>
 						</dict>
-						<key>SSP6</key>
+						<key>SS06</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>FgAAAA==</data>
+						</dict>
+						<key>SS07</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>FwAAAA==</data>
+						</dict>
+						<key>SS08</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>GAAAAA==</data>
+						</dict>
+						<key>SS09</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>GQAAAA==</data>
+						</dict>
+						<key>SS10</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>GgAAAA==</data>
+						</dict>
+						<key>USR1</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>DwAAAA==</data>
+						</dict>
+						<key>USR2</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>EAAAAA==</data>
 						</dict>
 					</dict>
 				</dict>

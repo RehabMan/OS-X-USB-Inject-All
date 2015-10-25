@@ -20,6 +20,9 @@ function mergeModelData
 cp ./USBInjectAll_template-Info.plist $plist_temp
 
 # MacBookPro
+mergeModelData "MacBookPro6,1"
+mergeModelData "MacBookPro6,2"
+mergeModelData "MacBookPro7,1"
 mergeModelData "MacBookPro8,1"
 mergeModelData "MacBookPro8,2"
 mergeModelData "MacBookPro8,3"
@@ -43,6 +46,9 @@ mergeModelData "MacBookAir7,1"
 mergeModelData "MacBookAir7,2"
 
 # iMac
+mergeModelData "iMac11,1"
+mergeModelData "iMac11,2"
+mergeModelData "iMac11,3"
 mergeModelData "iMac12,1"
 mergeModelData "iMac12,2"
 mergeModelData "iMac13,1"
@@ -53,6 +59,7 @@ mergeModelData "iMac14,3"
 mergeModelData "iMac15,1"
 mergeModelData "iMac16,1"
 mergeModelData "iMac16,2"
+mergeModelData "iMac17,1"
 
 # Macmini
 mergeModelData "Macmini5,1"
