@@ -59,7 +59,7 @@ DefinitionBlock ("SSDT-UIAC.aml", "SSDT", 1, "hack", "UIAC", 0x00003000)
     {
         Name(_HID, "UIA00000")
 
-        // override EH01 configuration to have only one port
+        // override XHC configuration to have only one port
         Name(RMCF, Package()
         {
             "8086_8xxx", Package()
