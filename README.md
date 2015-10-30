@@ -33,7 +33,7 @@ Find: <83bd8cfe ffff10>
 Replace: <83bd8cfe ffff15>
 ```
 
-You can copy/paste the patch from the file config_patches.plist that is checked into this project.  The config_patches.plist also contains the DSDT patches required to rename EHC1->EH02 and EHC2->EH02 which is important to avoid collisions between this kext and any built-in port injectors in the native kexts for your SMBIOS.
+You can copy/paste the patch from the file config_patches.plist that is checked into this project.  The config_patches.plist also contains the DSDT patches required to rename EHC1->EH01 and EHC2->EH02 which is important to avoid collisions between this kext and any built-in port injectors in the native kexts for your SMBIOS.
 
 Note: Do not plan to use the patch long-term.  It could be problematic.  If you have more than 15 ports on XHC, you should use FakePCIID_XHCIMux to route the USB2 component of those USB3 ports to EHCI.  It is easy to stay under the limit if up to 8-USB2 ports are routed off XHC.
 
