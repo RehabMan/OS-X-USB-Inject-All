@@ -155,6 +155,7 @@ OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
 
 void USBInjectAll::injectProperties(IOService* provider, OSDictionary* inject, bool force)
 {
+    provider->setProperty("RM,USBInjectAll", true);
     if (OSCollectionIterator* iter = OSCollectionIterator::withCollection(inject))
     {
         // Note: OSDictionary always contains OSSymbol*
@@ -339,7 +340,9 @@ OSObject* USBInjectAll_config::translateArray(OSArray* array)
             return NULL;
 
         // dictionary constructed to accomodate all pairs
-        OSDictionary* dict = OSDictionary::withCapacity(count >> 1);
+        int size = count >> 1;
+        if (!size) size = 1;
+        OSDictionary* dict = OSDictionary::withCapacity(size);
         if (!dict)
             return NULL;
 
