@@ -33,7 +33,8 @@ void* _org_rehabman_dontstrip_[] =
     (void*)&OSKextGetCurrentVersionString,
 };
 
-char g_exclude[256];
+static char g_exclude[256];
+static bool g_ignore_rmcf;
 
 OSDefineMetaClassAndStructors(org_rehabman_USBInjectAll, IOService)
 
@@ -224,8 +225,15 @@ bool USBInjectAll_config::start(IOService* provider)
     setProperty("RM,Build", "Release-" LOGNAME);
 #endif
 
-    if (PE_parse_boot_argn("uia_exclude", g_exclude, sizeof(g_exclude)))
+    if (PE_parse_boot_argn("uia_exclude", g_exclude, sizeof g_exclude))
         AlwaysLog("uia_exclude specfies '%s'\n", g_exclude);
+
+    uint32_t flag;
+    if (PE_parse_boot_argn("-uia_ignore_rmcf", &flag, sizeof flag))
+    {
+        g_ignore_rmcf = true;
+        AlwaysLog("-uia_ignore_rmcf specified, will ignore ACPI RMCF customizations\n");
+    }
 
     registerService();
 
@@ -252,7 +260,9 @@ OSDictionary* USBInjectAll_config::getConfiguration()
     }
 
     // allow overrides from ACPI at \UIAC.RMCF
-    if (IOACPIPlatformDevice* acpi = OSDynamicCast(IOACPIPlatformDevice, IORegistryEntry::fromPath("IOService:/AppleACPIPlatformExpert/UIAC")))
+    IOACPIPlatformDevice* acpi;
+    if (!g_ignore_rmcf &&
+        (acpi = OSDynamicCast(IOACPIPlatformDevice, IORegistryEntry::fromPath("IOService:/AppleACPIPlatformExpert/UIAC"))))
     {
         DebugLog("found override\n");
         if (OSObject* obj = getConfigurationOverride(acpi, "RMCF"))
