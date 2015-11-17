@@ -36,6 +36,14 @@ void* _org_rehabman_dontstrip_[] =
 static char g_exclude[256];
 static bool g_ignore_rmcf;
 
+static char* g_exclude_hs;
+static char* g_exclude_ss;
+static char* g_exclude_ssp;
+
+static char g_exclude_hs_static[] = "HS01,HS02,HS03,HS04,HS05,HS06,HS07,HS08,HS09,HS11,HS12,HS13,HS14";
+static char g_exclude_ss_static[] = "SS01,SS02,SS03,SS04,SS05,SS06,SS07,SS08,SS09,SS10";
+static char g_exclude_ssp_static[] = "SSP1,SSP2,SSP3,SSP4,SSP5,SSP6";
+
 OSDefineMetaClassAndStructors(org_rehabman_USBInjectAll, IOService)
 
 static IOPCIDevice* getPCIDevice(IORegistryEntry* registryEntry)
@@ -120,6 +128,23 @@ OSDictionary* USBInjectAll::getConfigurationForController(UInt16 vendor, UInt16 
     return result;
 }
 
+static void filterPorts(OSDictionary* ports, const char* filter)
+{
+    // filter is port names delimited by comma
+    for (const char* p = filter; *p; )
+    {
+        char key[16];
+        int count = sizeof(key)-1;
+        char* dest = key;
+        for (; count && *p && *p != ','; --count)
+            *dest++ = *p++;
+        *dest = 0;
+        DebugLog("removing port '%s'\n", key);
+        ports->removeObject(key);
+        if (*p == ',') ++p;
+    }
+}
+
 OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
 {
     // get configuration and make a copy
@@ -133,22 +158,16 @@ OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
         return NULL;
     }
 
-    // filter based on uia_exclude
+    // filter based on uia_exclude, -uia_exclude_hs, -uia_exclude_ss, -uia_exclude_ssp
     if (OSDictionary* ports = OSDynamicCast(OSDictionary, injectCopy->getObject("ports")))
     {
-        // g_exclude is port named delimited by comma
-        for (char* p = g_exclude; *p; )
-        {
-            char key[16];
-            int count = sizeof(key)-1;
-            char* dest = key;
-            for (; count && *p && *p != ','; --count)
-                *dest++ = *p++;
-            *dest = 0;
-            DebugLog("removing port '%s'\n", key);
-            ports->removeObject(key);
-            if (*p == ',') ++p;
-        }
+        filterPorts(ports, g_exclude);
+        if (g_exclude_hs)
+            filterPorts(ports, g_exclude_hs);
+        if (g_exclude_ss)
+            filterPorts(ports, g_exclude_ss);
+        if (g_exclude_ssp)
+            filterPorts(ports, g_exclude_ssp);
     }
 
     return injectCopy;
@@ -226,9 +245,28 @@ bool USBInjectAll_config::start(IOService* provider)
 #endif
 
     if (PE_parse_boot_argn("uia_exclude", g_exclude, sizeof g_exclude))
-        AlwaysLog("uia_exclude specfies '%s'\n", g_exclude);
+        AlwaysLog("uia_exclude specifies '%s'\n", g_exclude);
 
     uint32_t flag;
+
+    if (PE_parse_boot_argn("-uia_exclude_hs", &flag, sizeof flag))
+    {
+        g_exclude_hs = g_exclude_hs_static;
+        AlwaysLog("-uia_exclude_hs specfies '%s'\n", g_exclude_hs);
+    }
+
+    if (PE_parse_boot_argn("-uia_exclude_ss", &flag, sizeof flag))
+    {
+        g_exclude_ss = g_exclude_ss_static;
+        AlwaysLog("-uia_exclude_ss specifies '%s'\n", g_exclude_ss);
+    }
+
+    if (PE_parse_boot_argn("-uia_exclude_ssp", &flag, sizeof flag))
+    {
+        g_exclude_ssp = g_exclude_ssp_static;
+        AlwaysLog("-uia_exclude_ssp specifies '%s'\n", g_exclude_ssp);
+    }
+
     if (PE_parse_boot_argn("-uia_ignore_rmcf", &flag, sizeof flag))
     {
         g_ignore_rmcf = true;
