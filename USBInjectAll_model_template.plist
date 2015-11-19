@@ -14,7 +14,7 @@
 		<string>AppleUSBEHCIPCI</string>
 		<key>model</key>
 		<string>model_placeholder</string>
-		<key>ConfigurationName</key>
+		<key>kConfigurationName</key>
 		<string>EH01</string>
 	</dict>
 	<key>model_placeholder-EH02</key>
@@ -29,7 +29,7 @@
 		<string>AppleUSBEHCIPCI</string>
 		<key>model</key>
 		<string>model_placeholder</string>
-		<key>ConfigurationName</key>
+		<key>kConfigurationName</key>
 		<string>EH02</string>
 	</dict>
 	<key>model_placeholder-XHC</key>
@@ -44,6 +44,8 @@
 		<string>AppleUSBXHCIPCI</string>
 		<key>model</key>
 		<string>model_placeholder</string>
+		<key>kIsXHC</key>
+		<true/>
 	</dict>
 </dict>
 </plist>

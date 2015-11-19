@@ -795,7 +795,7 @@
 			<integer>487587840</integer>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
-			<key>ConfigurationName</key>
+			<key>kConfigurationName</key>
 			<string>HUB1</string>
 		</dict>
 		<key>EH02-internal-hub</key>
@@ -810,7 +810,7 @@
 			<integer>437256192</integer>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
-			<key>ConfigurationName</key>
+			<key>kConfigurationName</key>
 			<string>HUB2</string>
 		</dict>
 	</dict>

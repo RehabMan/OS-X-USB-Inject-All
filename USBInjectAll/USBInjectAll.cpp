@@ -35,6 +35,7 @@ void* _org_rehabman_dontstrip_[] =
 
 static char g_exclude[256];
 static bool g_ignore_rmcf;
+static bool g_exclude_xhc;
 
 static char* g_exclude_hs;
 static char* g_exclude_ss;
@@ -83,7 +84,7 @@ OSDictionary* USBInjectAll::getConfigurationForController(UInt16 vendor, UInt16 
     OSDictionary* result = NULL;
 
     // try ConfigurationName from our own configuration
-    if (OSString* configName = OSDynamicCast(OSString, getProperty("ConfigurationName")))
+    if (OSString* configName = OSDynamicCast(OSString, getProperty("kConfigurationName")))
     {
         DebugLog("trying '%s'\n", configName->getCStringNoCopy());
         result = OSDynamicCast(OSDictionary, dict->getObject(configName));
@@ -128,6 +129,11 @@ OSDictionary* USBInjectAll::getConfigurationForController(UInt16 vendor, UInt16 
     return result;
 }
 
+static inline bool isDelimiter(char test)
+{
+    return ',' == test || ';' == test;
+}
+
 static void filterPorts(OSDictionary* ports, const char* filter)
 {
     // filter is port names delimited by comma
@@ -136,12 +142,12 @@ static void filterPorts(OSDictionary* ports, const char* filter)
         char key[16];
         int count = sizeof(key)-1;
         char* dest = key;
-        for (; count && *p && *p != ','; --count)
+        for (; count && *p && !isDelimiter(*p); --count)
             *dest++ = *p++;
         *dest = 0;
         DebugLog("removing port '%s'\n", key);
         ports->removeObject(key);
-        if (*p == ',') ++p;
+        if (isDelimiter(*p)) ++p;
     }
 }
 
@@ -202,6 +208,14 @@ IOService* USBInjectAll::probe(IOService* provider, SInt32* score)
     IOPCIDevice* pciDevice = getPCIDevice(provider);
     if (!pciDevice)
         return NULL;
+
+    // don't inject on XHC when -uia_exclude_xhc is specified
+    if (g_exclude_xhc)
+    {
+        OSBoolean* isXHC = OSDynamicCast(OSBoolean, getProperty("kIsXHC"));
+        if (isXHC && isXHC->isTrue())
+            return NULL;
+    }
 
     // determine vendor/device-id of the controller
     UInt32 dvID = pciDevice->extendedConfigRead32(kIOPCIConfigVendorID);
@@ -271,6 +285,12 @@ bool USBInjectAll_config::start(IOService* provider)
     {
         g_ignore_rmcf = true;
         AlwaysLog("-uia_ignore_rmcf specified, will ignore ACPI RMCF customizations\n");
+    }
+
+    if (PE_parse_boot_argn("-uia_exclude_xhc", &flag, sizeof flag))
+    {
+        g_exclude_xhc = true;
+        AlwaysLog("-uia_exclude_xhc specified, will not inject on XHC\n");
     }
 
     registerService();
