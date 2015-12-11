@@ -18,7 +18,7 @@
 		0C4B238D14598AD20080D960 /* USBInjectAll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "USBInjectAll-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		842548D51BD613B90021F757 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		844778DD16E7FD2100B27895 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; lineEnding = 0; path = makefile; sourceTree = SOURCE_ROOT; usesTabs = 1; };
-		846DBDD11BD70B6200F1139C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-9-series.kext/Contents/Info.plist"; sourceTree = "<group>"; };
+		846DBDD11BD70B6200F1139C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-x99-injector.kext/Contents/Info.plist"; sourceTree = "<group>"; };
 		8499218E1600F4FC00CCDF3B /* USBInjectAll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = USBInjectAll.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		8499218F1600F4FC00CCDF3B /* USBInjectAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = USBInjectAll.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		84B173A51BD6BEF200FF8553 /* strstr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strstr.cpp; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 				84B173A51BD6BEF200FF8553 /* strstr.cpp */,
 				84C4CE491BD5EF14003BC8FE /* Info.plist Generation */,
 				0C4B238314598AD20080D960 /* USBInjectAll */,
-				846DBDD21BD70B6A00F1139C /* XHCI-9-series.kext */,
+				846DBDD21BD70B6A00F1139C /* XHCI-x99-injector.kext */,
 				0C4B238014598AD20080D960 /* Frameworks */,
 				0C4B237F14598AD20080D960 /* Products */,
 			);
@@ -101,12 +101,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		846DBDD21BD70B6A00F1139C /* XHCI-9-series.kext */ = {
+		846DBDD21BD70B6A00F1139C /* XHCI-x99-injector.kext */ = {
 			isa = PBXGroup;
 			children = (
 				846DBDD11BD70B6200F1139C /* Info.plist */,
 			);
-			name = "XHCI-9-series.kext";
+			name = "XHCI-x99-injector.kext";
 			sourceTree = "<group>";
 		};
 		84C4CE481BD5ED0E003BC8FE /* Generated Files */ = {
