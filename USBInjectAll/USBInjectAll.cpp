@@ -41,7 +41,7 @@ static char* g_exclude_hs;
 static char* g_exclude_ss;
 static char* g_exclude_ssp;
 
-static char g_exclude_hs_static[] = "HS01,HS02,HS03,HS04,HS05,HS06,HS07,HS08,HS09,HS11,HS12,HS13,HS14";
+static char g_exclude_hs_static[] = "HS01,HS02,HS03,HS04,HS05,HS06,HS07,HS08,HS09,HS10,HS11,HS12,HS13,HS14";
 static char g_exclude_ss_static[] = "SS01,SS02,SS03,SS04,SS05,SS06,SS07,SS08,SS09,SS10";
 static char g_exclude_ssp_static[] = "SSP1,SSP2,SSP3,SSP4,SSP5,SSP6";
 
