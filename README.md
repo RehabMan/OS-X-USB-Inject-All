@@ -74,7 +74,7 @@ But excluding ports doesn't give all the flexibility that might be needed.  All 
 For example, if we wanted to enable only SSP1 on XHC for 8086_8xxx chipsets:
 
 ```
-DefinitionBlock ("SSDT-UIAC.aml", "SSDT", 1, "hack", "UIAC", 0x00003000)
+DefinitionBlock ("", "SSDT", 1, "hack", "UIAC", 0)
 {
     Device(UIAC)
     {

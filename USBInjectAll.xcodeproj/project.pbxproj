@@ -27,7 +27,7 @@
 		84C4CE441BD5EC37003BC8FE /* USBInjectAll_template-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "USBInjectAll_template-Info.plist"; sourceTree = "<group>"; };
 		84CACFB11BD6D37E00B41FBF /* SSDT-UIAC.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC.dsl"; sourceTree = "<group>"; };
 		ED0AD3E11BD725DC00B36B4B /* config_patches.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config_patches.plist; sourceTree = "<group>"; };
-		ED36B7881BD74CBA0020DE23 /* SSDT-HACK.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-HACK.dsl"; sourceTree = "<group>"; };
+		ED36B7881BD74CBA0020DE23 /* SSDT-XOSI.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-XOSI.dsl"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 				ED0AD3E11BD725DC00B36B4B /* config_patches.plist */,
 				842548D51BD613B90021F757 /* README.md */,
 				84CACFB11BD6D37E00B41FBF /* SSDT-UIAC.dsl */,
-				ED36B7881BD74CBA0020DE23 /* SSDT-HACK.dsl */,
+				ED36B7881BD74CBA0020DE23 /* SSDT-XOSI.dsl */,
 				844778DD16E7FD2100B27895 /* makefile */,
 				84B173A51BD6BEF200FF8553 /* strstr.cpp */,
 				84C4CE491BD5EF14003BC8FE /* Info.plist Generation */,
