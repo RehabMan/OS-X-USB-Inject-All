@@ -3,7 +3,7 @@
 // This SSDT demonstrates a custom configuration for USBInjectAll.kext.
 //
 
-DefinitionBlock ("SSDT-UIAC.aml", "SSDT", 1, "hack", "UIAC", 0x00003000)
+DefinitionBlock ("", "SSDT", 1, "hack", "UIAC", 0)
 {
     Device(UIAC)
     {

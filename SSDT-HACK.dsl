@@ -8,7 +8,7 @@
 // patch in config.plist/ACPI/DSDT/Patches (see config_patches.plist)
 //
 
-DefinitionBlock ("SSDT-HACK.aml", "SSDT", 1, "hack", "xosi", 0x00003000)
+DefinitionBlock ("", "SSDT", 1, "hack", "XOSI", 0)
 {
     // All _OSI calls in DSDT are routed to XOSI...
     // XOSI simulates "Windows 2012" (which is Windows 8)
@@ -34,7 +34,7 @@ DefinitionBlock ("SSDT-HACK.aml", "SSDT", 1, "hack", "xosi", 0x00003000)
             //"Windows 2013",       // Windows 8.1/Windows Server 2012 R2
             //"Windows 2015",       // Windows 10/Windows Server TP
         }, Local0)
-        Return (LNotEqual(Match(Local0, MEQ, Arg0, MTR, 0, 0), Ones))
+        Return (Ones != Match(Local0, MEQ, Arg0, MTR, 0, 0))
     }
 }
 
