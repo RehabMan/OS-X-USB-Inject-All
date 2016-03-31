@@ -495,7 +495,7 @@
 				<key>8086_9xxx</key>
 				<dict>
 					<key>port-count</key>
-					<data>DwAAAA==</data>
+					<data>DQAAAA==</data>
 					<key>ports</key>
 					<dict>
 						<key>HS01</key>
@@ -594,7 +594,7 @@
 				<key>8086_9cb1</key>
 				<dict>
 					<key>port-count</key>
-					<data>DQAAAA==</data>
+					<data>DwAAAA==</data>
 					<key>ports</key>
 					<dict>
 						<key>HS01</key>
