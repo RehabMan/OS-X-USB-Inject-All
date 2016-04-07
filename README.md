@@ -103,6 +103,8 @@ DefinitionBlock ("", "SSDT", 1, "hack", "UIAC", 0)
 
 An example is also provided in SSDT-UIAC.dsl.  All of the data injected for each type of device can be changed via this mechnanism.
 
+The SSDT-UIAC-ALL.dsl contains the same data present in the Info.plist.  Using it would result in a net zero change.  You can use it as a template to establish your own custom SSDT for the specific USB configuration on your computer.  Delete ports you do not need.  Or change UsbConnector or portType to match your own USB hardware configuration.  All XHC identifiers (vendor_device) are included, so you should probably start by eliminating the configurations that don't apply to your XHC device, leaving only the configuration for your device.  You can see your device-id in ioreg under the XHC node (vendor-id and device-id).
+
 
 ### Feedback
 
