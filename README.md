@@ -23,7 +23,7 @@ This kext is only for 10.11+.  It has no use with prior versions.
 
 Currently, only Intel controllers are supported.  The most commonly used SMBIOS model identifiers are in the kext.
 
-It is not intendended that this kext be used long term.  It is best to create a custom injector containing only the ports that are active on the target machine.
+Without a custom configuration, it is not intended that this kext be used long term.  It is best to create a custom injector containing only the ports that are active on the target machine, or to create an SSDT that customizes the port injection done by USBInjectAll.kext.  Customizing USBInjectAll.kext with an SSDT is covered later in this README.
 
 For some chipsets, you may need to bypass the 15-port limit in 10.11.  In particular, XHCI controllers with device-id that starts with '8' will need the patch to bypass the limit.  The patch was created by arix98 and published on insanelymac.com here: http://www.insanelymac.com/forum/topic/308325-guide-1011-full-speed-usb-series-89-keeping-vanilla-sle/page-9#entry2175618 (post #179 of that thread).
 
