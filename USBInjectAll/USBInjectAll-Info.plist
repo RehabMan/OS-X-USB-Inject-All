@@ -1378,6 +1378,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1423,6 +1425,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1468,6 +1472,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1513,6 +1519,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1558,6 +1566,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1603,6 +1613,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1648,6 +1660,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1693,6 +1707,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1738,6 +1754,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1783,6 +1801,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1828,6 +1848,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1873,6 +1895,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1918,6 +1942,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -1963,6 +1989,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2008,6 +2036,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2053,6 +2083,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2098,6 +2130,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2143,6 +2177,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2188,6 +2224,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2233,6 +2271,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2278,6 +2318,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2323,6 +2365,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2368,6 +2412,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2413,6 +2459,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2458,6 +2506,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2503,6 +2553,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2548,6 +2600,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2593,6 +2647,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2638,6 +2694,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2683,6 +2741,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2728,6 +2788,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2773,6 +2835,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2818,6 +2882,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2863,6 +2929,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2908,6 +2976,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2953,6 +3023,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -2998,6 +3070,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3043,6 +3117,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3088,6 +3164,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3133,6 +3211,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3178,6 +3258,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3223,6 +3305,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3268,6 +3352,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3313,6 +3399,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3358,6 +3446,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3403,6 +3493,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
@@ -3448,6 +3540,8 @@
 			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
+			<key>kConfigurationName</key>
+			<string>XHC</string>
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>

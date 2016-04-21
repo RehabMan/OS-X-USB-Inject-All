@@ -46,6 +46,8 @@
 		<string>model_placeholder</string>
 		<key>kIsXHC</key>
 		<true/>
+		<key>kConfigurationName</key>
+		<string>XHC</string>
 	</dict>
 </dict>
 </plist>
