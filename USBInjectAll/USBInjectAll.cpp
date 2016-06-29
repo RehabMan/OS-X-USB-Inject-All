@@ -306,7 +306,7 @@ OSDictionary* USBInjectAll_config::getConfiguration()
     OSDictionary* dict = OSDynamicCast(OSDictionary, getProperty("Configuration"));
     if (!dict)
     {
-        DebugLog("no Configuration property foundn in USBInjectAll_config::start\n");
+        DebugLog("no Configuration property found in USBInjectAll_config::start\n");
         return false;
     }
 
