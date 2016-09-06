@@ -1323,6 +1323,21 @@
 			<key>locationID</key>
 			<integer>487587840</integer>
 		</dict>
+		<key>EH01-internal-intel-hub</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IOProbeScore</key>
+			<integer>5000</integer>
+			<key>IOProviderClass</key>
+			<string>AppleUSB20InternalIntelHub</string>
+			<key>kConfigurationName</key>
+			<string>HUB1</string>
+			<key>locationID</key>
+			<integer>487587840</integer>
+		</dict>
 		<key>EH02-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -1333,6 +1348,21 @@
 			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleUSB20InternalHub</string>
+			<key>kConfigurationName</key>
+			<string>HUB2</string>
+			<key>locationID</key>
+			<integer>437256192</integer>
+		</dict>
+		<key>EH02-internal-intel-hub</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>IOClass</key>
+			<string>org_rehabman_USBInjectAll</string>
+			<key>IOProbeScore</key>
+			<integer>5000</integer>
+			<key>IOProviderClass</key>
+			<string>AppleUSB20InternalIntelHub</string>
 			<key>kConfigurationName</key>
 			<string>HUB2</string>
 			<key>locationID</key>
