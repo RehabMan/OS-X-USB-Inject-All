@@ -1030,66 +1030,6 @@
 				</dict>
 			</dict>
 		</dict>
-		<key>EH01-internal-hub</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>${MODULE_NAME}</string>
-			<key>IOClass</key>
-			<string>org_rehabman_USBInjectAll</string>
-			<key>IOProviderClass</key>
-			<string>AppleUSB20InternalHub</string>
-			<key>locationID</key>
-			<integer>487587840</integer>
-			<key>IOProbeScore</key>
-			<integer>5000</integer>
-			<key>kConfigurationName</key>
-			<string>HUB1</string>
-		</dict>
-		<key>EH01-internal-intel-hub</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>${MODULE_NAME}</string>
-			<key>IOClass</key>
-			<string>org_rehabman_USBInjectAll</string>
-			<key>IOProviderClass</key>
-			<string>AppleUSB20InternalIntelHub</string>
-			<key>locationID</key>
-			<integer>487587840</integer>
-			<key>IOProbeScore</key>
-			<integer>5000</integer>
-			<key>kConfigurationName</key>
-			<string>HUB1</string>
-		</dict>
-		<key>EH02-internal-hub</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>${MODULE_NAME}</string>
-			<key>IOClass</key>
-			<string>org_rehabman_USBInjectAll</string>
-			<key>IOProviderClass</key>
-			<string>AppleUSB20InternalHub</string>
-			<key>locationID</key>
-			<integer>437256192</integer>
-			<key>IOProbeScore</key>
-			<integer>5000</integer>
-			<key>kConfigurationName</key>
-			<string>HUB2</string>
-		</dict>
-		<key>EH02-internal-intel-hub</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>${MODULE_NAME}</string>
-			<key>IOClass</key>
-			<string>org_rehabman_USBInjectAll</string>
-			<key>IOProviderClass</key>
-			<string>AppleUSB20InternalIntelHub</string>
-			<key>locationID</key>
-			<integer>437256192</integer>
-			<key>IOProbeScore</key>
-			<integer>5000</integer>
-			<key>kConfigurationName</key>
-			<string>HUB2</string>
-		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2015 RehabMan. All rights reserved.</string>
