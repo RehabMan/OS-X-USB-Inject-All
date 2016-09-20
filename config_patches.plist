@@ -42,6 +42,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>change 15 port limit to 20 in XHCI kext (9-series)</string>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
 				<key>Find</key>
 				<data>g72M/v//EA==</data>
 				<key>Name</key>
@@ -52,12 +54,42 @@
 			<dict>
 				<key>Comment</key>
 				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
 				<key>Find</key>
 				<data>g72M/v//EA==</data>
 				<key>Name</key>
 				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>g72M/v//Gw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 20 in XHCI kext (9-series)</string>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g710////EA==</data>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>g710////FQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g710////EA==</data>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>g710////Gw==</data>
 			</dict>
 		</array>
 	</dict>
