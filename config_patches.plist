@@ -44,10 +44,10 @@
 				<string>change 15 port limit to 20 in XHCI kext (9-series)</string>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
 				<key>Find</key>
 				<data>g72M/v//EA==</data>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>g72M/v//FQ==</data>
 			</dict>
@@ -56,10 +56,10 @@
 				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
 				<key>Find</key>
 				<data>g72M/v//EA==</data>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>g72M/v//Gw==</data>
 			</dict>
@@ -68,12 +68,10 @@
 				<string>change 15 port limit to 20 in XHCI kext (9-series)</string>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
-				<key>Disabled</key>
-				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
 				<key>Find</key>
 				<data>g710////EA==</data>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>g710////FQ==</data>
 			</dict>
@@ -82,12 +80,10 @@
 				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
-				<key>Disabled</key>
-				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
 				<key>Find</key>
 				<data>g710////EA==</data>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>g710////Gw==</data>
 			</dict>
