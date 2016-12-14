@@ -37,6 +37,9 @@ mergeModelData "MacBookPro11,4"
 mergeModelData "MacBookPro11,5"
 mergeModelData "MacBookPro12,1"
 mergeModelData "MacBookPro12,2"
+mergeModelData "MacBookPro13,1"
+mergeModelData "MacBookPro13,2"
+mergeModelData "MacBookPro13,3"
 
 # MacBookAir
 mergeModelData "MacBookAir4,1"
