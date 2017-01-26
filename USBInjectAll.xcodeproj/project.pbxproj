@@ -29,6 +29,7 @@
 		ED0AD3E11BD725DC00B36B4B /* config_patches.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config_patches.plist; sourceTree = "<group>"; };
 		ED36B7881BD74CBA0020DE23 /* SSDT-XOSI.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-XOSI.dsl"; sourceTree = "<group>"; };
 		ED8AAA3E1CB5E5B1000C0B38 /* SSDT-UIAC-ALL.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC-ALL.dsl"; sourceTree = "<group>"; };
+		ED90BC931E3A57DD008DB3AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-200-series-injector.kext/Contents/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				84C4CE491BD5EF14003BC8FE /* Info.plist Generation */,
 				0C4B238314598AD20080D960 /* USBInjectAll */,
 				846DBDD21BD70B6A00F1139C /* XHCI-x99-injector.kext */,
+				ED90BC921E3A57B5008DB3AA /* XHCI-200-series-injector.kext */,
 				0C4B238014598AD20080D960 /* Frameworks */,
 				0C4B237F14598AD20080D960 /* Products */,
 			);
@@ -128,6 +130,14 @@
 				84C4CE431BD5EC37003BC8FE /* USBInjectAll_model_template.plist */,
 			);
 			name = "Info.plist Generation";
+			sourceTree = "<group>";
+		};
+		ED90BC921E3A57B5008DB3AA /* XHCI-200-series-injector.kext */ = {
+			isa = PBXGroup;
+			children = (
+				ED90BC931E3A57DD008DB3AA /* Info.plist */,
+			);
+			name = "XHCI-200-series-injector.kext";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

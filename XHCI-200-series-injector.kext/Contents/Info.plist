@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.5.0 Open Source 2015, x99-series XHCI injector</string>
+	<string>0.5.0 Open Source 2015, 200-series XHCI injector</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.rehabman.injector.x99-series-XHCI</string>
+	<string>org.rehabman.injector.200-series-XHCI</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Injector for x99-series Intel XHCI Controllers</string>
+	<string>Injector for 200-series Intel XHCI Controllers</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
@@ -26,14 +26,12 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-			<key>alternate:IOClass</key>
-			<string>AppleUSBXHCILPTHB</string>
 			<key>IOClass</key>
-			<string>AppleUSBXHCILPTH</string>
+			<string>AppleUSBXHCISPT</string>
 			<key>IOPCIPauseCompatible</key>
 			<true/>
 			<key>IOPCIPrimaryMatch</key>
-			<string>0x8d318086</string>
+			<string>0xa2af8086</string>
 			<key>IOPCITunnelCompatible</key>
 			<true/>
 			<key>IOProbeScore</key>
