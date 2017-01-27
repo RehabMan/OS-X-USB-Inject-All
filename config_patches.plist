@@ -32,6 +32,22 @@
 					<key>Replace</key>
 					<data>RUgwMg==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHCI to XHC</string>
+					<key>Find</key>
+					<data>WEhDSQ==</data>
+					<key>Replace</key>
+					<data>WEhDXw==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC1 to XHC</string>
+					<key>Find</key>
+					<data>WEhDMQ==</data>
+					<key>Replace</key>
+					<data>WEhDXw==</data>
+				</dict>
 			</array>
 		</dict>
 	</dict>
