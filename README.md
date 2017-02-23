@@ -117,7 +117,7 @@ http://www.tonymacx86.com/el-capitan-laptop-support/173616-guide-10-11-usb-chang
 
 Downloads are available on Bitbucket:
 
-https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads
+https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/
 
 
 The best way to download the config_patches.plist and other repo files is to download the project ZIP:
