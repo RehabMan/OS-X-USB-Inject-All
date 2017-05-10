@@ -48,8 +48,6 @@ You can copy/paste the patch from the file config_patches.plist that is checked 
 
 Note: Do not plan to use the patch long-term.  It could be problematic.  If you have more than 15 ports on XHC, you should use FakePCIID_XHCIMux to route the USB2 component of those USB3 ports to EHCI.  It is easy to stay under the limit if up to 8-USB2 ports are routed off XHC.
 
-Currently, this kext does not support the latest 100 series boards.  It would be easy to add.
-
 This kext may be helpful in installation scenarios as well where broken USB may prevent booting the installer from a USB stick.  It should work from EFI/Clover/kexts.
 
 
