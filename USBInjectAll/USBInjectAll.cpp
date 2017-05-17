@@ -205,10 +205,6 @@ IOService* USBInjectAll::probe(IOService* provider, SInt32* score)
     if (!super::probe(provider, score))
         return NULL;
 
-    IOPCIDevice* pciDevice = getPCIDevice(provider);
-    if (!pciDevice)
-        return NULL;
-
     // don't inject on XHC when -uia_exclude_xhc is specified
     if (g_exclude_xhc)
     {
@@ -218,7 +214,12 @@ IOService* USBInjectAll::probe(IOService* provider, SInt32* score)
     }
 
     // determine vendor/device-id of the controller
-    UInt32 dvID = pciDevice->extendedConfigRead32(kIOPCIConfigVendorID);
+    UInt32 dvID = 0;
+    if (IOPCIDevice* pciDevice = getPCIDevice(provider))
+    {
+        // determine vendor/device-id of the controller
+        dvID = pciDevice->extendedConfigRead32(kIOPCIConfigVendorID);
+    }
     UInt16 vendor = dvID;
     UInt16 device = dvID >> 16;
 
