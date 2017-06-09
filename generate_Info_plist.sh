@@ -40,6 +40,9 @@ mergeModelData "MacBookPro12,2"
 mergeModelData "MacBookPro13,1"
 mergeModelData "MacBookPro13,2"
 mergeModelData "MacBookPro13,3"
+mergeModelData "MacBookPro14,1"
+mergeModelData "MacBookPro14,2"
+mergeModelData "MacBookPro14,3"
 
 # MacBookAir
 mergeModelData "MacBookAir4,1"
@@ -74,6 +77,7 @@ mergeModelData "iMac15,1"
 mergeModelData "iMac16,1"
 mergeModelData "iMac16,2"
 mergeModelData "iMac17,1"
+mergeModelData "iMac18,1"
 
 # Macmini
 mergeModelData "Macmini5,1"
@@ -86,6 +90,7 @@ mergeModelData "Macmini7,1"
 # MacBook
 mergeModelData "MacBook8,1"
 mergeModelData "MacBook9,1"
+mergeModelData "MacBook10,1"
 
 # MacPro
 mergeModelData "MacPro3,1"
