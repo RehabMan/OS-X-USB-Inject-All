@@ -78,6 +78,8 @@ mergeModelData "iMac16,1"
 mergeModelData "iMac16,2"
 mergeModelData "iMac17,1"
 mergeModelData "iMac18,1"
+mergeModelData "iMac18,2"
+mergeModelData "iMac18,3"
 
 # Macmini
 mergeModelData "Macmini5,1"

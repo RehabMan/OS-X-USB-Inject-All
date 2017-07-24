@@ -49,56 +49,56 @@
 							<key>port</key>
 							<data>AQAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP12</key>
 						<dict>
 							<key>port</key>
 							<data>AgAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP13</key>
 						<dict>
 							<key>port</key>
 							<data>AwAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP14</key>
 						<dict>
 							<key>port</key>
 							<data>BAAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP15</key>
 						<dict>
 							<key>port</key>
 							<data>BQAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP16</key>
 						<dict>
 							<key>port</key>
 							<data>BgAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP17</key>
 						<dict>
 							<key>port</key>
 							<data>BwAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP18</key>
 						<dict>
 							<key>port</key>
 							<data>CAAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 					</dict>
 				</dict>
@@ -113,56 +113,56 @@
 							<key>port</key>
 							<data>AQAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP22</key>
 						<dict>
 							<key>port</key>
 							<data>AgAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP23</key>
 						<dict>
 							<key>port</key>
 							<data>AwAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP24</key>
 						<dict>
 							<key>port</key>
 							<data>BAAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP25</key>
 						<dict>
 							<key>port</key>
 							<data>BQAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP26</key>
 						<dict>
 							<key>port</key>
 							<data>BgAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP27</key>
 						<dict>
 							<key>port</key>
 							<data>BwAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 						<key>HP28</key>
 						<dict>
 							<key>port</key>
 							<data>CAAAAA==</data>
 							<key>portType</key>
-							<integer>2</integer>
+							<integer>0</integer>
 						</dict>
 					</dict>
 				</dict>

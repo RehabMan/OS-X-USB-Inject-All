@@ -10,6 +10,11 @@
 // Change the UsbConnector or portType as needed to match your
 // actual USB configuration.
 //
+// Note:
+// portType=0 seems to indicate normal external USB2 port (as seen in MacBookPro8,1)
+// portType=2 seems to indicate "internal device" (as seen in MacBookPro8,1)
+// portType=4 is used by MacBookPro8,3 (reason/purpose unknown)
+//
 
 DefinitionBlock ("", "SSDT", 2, "hack", "UIAC-ALL", 0)
 {
@@ -27,49 +32,49 @@ DefinitionBlock ("", "SSDT", 2, "hack", "UIAC-ALL", 0)
                     "HP11", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 1, 0, 0, 0 },
                     },
                     "HP12", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 2, 0, 0, 0 },
                     },
                     "HP13", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 3, 0, 0, 0 },
                     },
                     "HP14", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 4, 0, 0, 0 },
                     },
                     "HP15", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 5, 0, 0, 0 },
                     },
                     "HP16", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 6, 0, 0, 0 },
                     },
                     "HP17", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 7, 0, 0, 0 },
                     },
                     "HP18", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 8, 0, 0, 0 },
                     },
                 },
@@ -82,37 +87,37 @@ DefinitionBlock ("", "SSDT", 2, "hack", "UIAC-ALL", 0)
                     "HP21", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 1, 0, 0, 0 },
                     },
                     "HP22", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 2, 0, 0, 0 },
                     },
                     "HP23", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 3, 0, 0, 0 },
                     },
                     "HP24", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 4, 0, 0, 0 },
                     },
                     "HP25", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 5, 0, 0, 0 },
                     },
                     "HP26", Package()
                     {
                         //"UsbConnector", 0,
-                        "portType", 2,
+                        "portType", 0,
                         "port", Buffer() { 6, 0, 0, 0 },
                     },
                 },
