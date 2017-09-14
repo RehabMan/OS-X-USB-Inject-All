@@ -28,6 +28,7 @@ Without a custom configuration, it is not intended that this kext be used long t
 For some chipsets, you may need to bypass the 15-port limit in 10.11.  In particular, XHCI controllers with device-id that starts with '8' will need the patch to bypass the limit.  The patch was created by arix98 and published on insanelymac.com here: http://www.insanelymac.com/forum/topic/308325-guide-1011-full-speed-usb-series-89-keeping-vanilla-sle/page-9#entry2175618 (post #179 of that thread).
 
 This kext requires only 20 ports maximum, so the patch would be:
+(these patches are for 10.11.x only)
 
 ```
 Comment: change 15 port limit to 20 in AppleUSBXHCIPCI
@@ -44,7 +45,7 @@ Find: <83bd8cfe ffff10>
 Replace: <83bd8cfe ffff1b>
 ```
 
-You can copy/paste the patch from the file config_patches.plist that is checked into this project.  The config_patches.plist also contains the DSDT patches required to rename EHC1->EH01 and EHC2->EH02 which is important to avoid collisions between this kext and any built-in port injectors in the native kexts for your SMBIOS.
+You can copy/paste the patch from the file config_patches.plist that is checked into this project, which also has the patches for versions other than 10.11.x.  The config_patches.plist also contains the DSDT patches required to rename EHC1->EH01 and EHC2->EH02 which is important to avoid collisions between this kext and any built-in port injectors in the native kexts for your SMBIOS.
 
 Note: Do not plan to use the patch long-term.  It could be problematic.  If you have more than 15 ports on XHC, you should use FakePCIID_XHCIMux to route the USB2 component of those USB3 ports to EHCI.  It is easy to stay under the limit if up to 8-USB2 ports are routed off XHC.
 

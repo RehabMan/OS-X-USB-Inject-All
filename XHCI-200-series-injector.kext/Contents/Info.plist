@@ -22,7 +22,7 @@
 	<string>0.5.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>AppleUSBXHCILPTH X99</key>
+		<key>AppleUSBXHCILPTH 200-X299</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
