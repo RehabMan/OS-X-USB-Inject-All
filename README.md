@@ -121,7 +121,7 @@ https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/
 
 The best way to download the config_patches.plist and other repo files is to download the project ZIP:
 
-https://github.com/RehabMan/OS-X-USB-Inject-All/archive/706fea51222eb73343d347db10cf48500333a7bd.zip
+https://github.com/RehabMan/OS-X-USB-Inject-All/archive/master.zip
 
 
 If you need a copy of the repo with the 9-series injector:
