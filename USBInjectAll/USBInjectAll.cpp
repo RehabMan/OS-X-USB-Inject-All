@@ -181,6 +181,12 @@ OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
 
 void USBInjectAll::injectProperties(IOService* provider, OSDictionary* inject, bool force)
 {
+    OSBoolean* disable = OSDynamicCast(OSBoolean, inject->getObject("Disabled"));
+    if (disable && disable->isTrue())
+    {
+        provider->setProperty("RM,USBInjectAll_Disabled", true);
+        return;
+    }
     provider->setProperty("RM,USBInjectAll", true);
     if (OSCollectionIterator* iter = OSCollectionIterator::withCollection(inject))
     {
