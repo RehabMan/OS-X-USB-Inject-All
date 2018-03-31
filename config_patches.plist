@@ -103,6 +103,18 @@
 				<key>Replace</key>
 				<data>g32UD5CQkJCQkA==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>disable port limit in XHCI kext (alternate, credit FredWst)</string>
+				<key>MatchOS</key>
+				<string>10.13.4</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>g32UDw+DlwQ=</data>
+				<key>Replace</key>
+				<data>g32UEQ+DlwQ=</data>
+			</dict>
 		</array>
 	</dict>
 </dict>
