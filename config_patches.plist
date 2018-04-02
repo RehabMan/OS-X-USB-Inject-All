@@ -105,7 +105,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>disable port limit in XHCI kext (alternate, credit FredWst)</string>
+				<string>change 15 port limit to 26 in XHCI kext (credit FredWst)</string>
 				<key>MatchOS</key>
 				<string>10.13.4</string>
 				<key>Name</key>
@@ -113,7 +113,7 @@
 				<key>Find</key>
 				<data>g32UDw+DlwQ=</data>
 				<key>Replace</key>
-				<data>g32UEQ+DlwQ=</data>
+				<data>g32UGg+DlwQ=</data>
 			</dict>
 		</array>
 	</dict>
