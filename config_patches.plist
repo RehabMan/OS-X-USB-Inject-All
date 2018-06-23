@@ -95,7 +95,7 @@
 				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>MatchOS</key>
-				<string>10.13.4</string>
+				<string>10.13.4,10.13.5</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Find</key>
@@ -107,7 +107,7 @@
 				<key>Comment</key>
 				<string>change 15 port limit to 26 in XHCI kext (credit FredWst)</string>
 				<key>MatchOS</key>
-				<string>10.13.4</string>
+				<string>10.13.4,10.13.5</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Find</key>
