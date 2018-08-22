@@ -652,7 +652,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "UIAC-ALL", 0)
                     },
                 },
             },
-            "8086_9d2f", Package()
+            "8086_9dxx", Package()  // examples: 0x9d2f, 0x9ded
             {
                 "port-count", Buffer() { 18, 0, 0, 0 },
                 "ports", Package()
