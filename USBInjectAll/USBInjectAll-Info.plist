@@ -5086,7 +5086,7 @@
 			<key>model</key>
 			<string>MacBookPro9,2</string>
 		</dict>
-		<key>MacBookpro10,2-AppeBusPowerControllerUSB</key>
+		<key>MacBookPro10,2-AppeBusPowerControllerUSB</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
@@ -5097,9 +5097,9 @@
 			<key>kConfigurationName</key>
 			<string>AppleBusPowerControllerUSB</string>
 			<key>model</key>
-			<string>MacBookpro10,2</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookpro10,2-EH01</key>
+		<key>MacBookPro10,2-EH01</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
@@ -5112,9 +5112,9 @@
 			<key>kConfigurationName</key>
 			<string>EH01</string>
 			<key>model</key>
-			<string>MacBookpro10,2</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookpro10,2-EH01-internal-hub</key>
+		<key>MacBookPro10,2-EH01-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
@@ -5129,9 +5129,9 @@
 			<key>locationID</key>
 			<integer>487587840</integer>
 			<key>model</key>
-			<string>MacBookpro10,2</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookpro10,2-EH02</key>
+		<key>MacBookPro10,2-EH02</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
@@ -5144,9 +5144,9 @@
 			<key>kConfigurationName</key>
 			<string>EH02</string>
 			<key>model</key>
-			<string>MacBookpro10,2</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookpro10,2-EH02-internal-hub</key>
+		<key>MacBookPro10,2-EH02-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
@@ -5161,9 +5161,9 @@
 			<key>locationID</key>
 			<integer>437256192</integer>
 			<key>model</key>
-			<string>MacBookpro10,2</string>
+			<string>MacBookPro10,2</string>
 		</dict>
-		<key>MacBookpro10,2-XHC</key>
+		<key>MacBookPro10,2-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
@@ -5178,7 +5178,7 @@
 			<key>kIsXHC</key>
 			<true/>
 			<key>model</key>
-			<string>MacBookpro10,2</string>
+			<string>MacBookPro10,2</string>
 		</dict>
 		<key>MacPro3,1-AppeBusPowerControllerUSB</key>
 		<dict>
