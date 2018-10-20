@@ -18,7 +18,6 @@
 		0C4B238D14598AD20080D960 /* USBInjectAll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "USBInjectAll-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		842548D51BD613B90021F757 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		844778DD16E7FD2100B27895 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; lineEnding = 0; path = makefile; sourceTree = SOURCE_ROOT; usesTabs = 1; };
-		846DBDD11BD70B6200F1139C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-x99-injector.kext/Contents/Info.plist"; sourceTree = "<group>"; };
 		8499218E1600F4FC00CCDF3B /* USBInjectAll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = USBInjectAll.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		8499218F1600F4FC00CCDF3B /* USBInjectAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = USBInjectAll.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		84B173A51BD6BEF200FF8553 /* strstr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strstr.cpp; sourceTree = "<group>"; };
@@ -26,11 +25,10 @@
 		84C4CE431BD5EC37003BC8FE /* USBInjectAll_model_template.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USBInjectAll_model_template.plist; sourceTree = "<group>"; };
 		84C4CE441BD5EC37003BC8FE /* USBInjectAll_template-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "USBInjectAll_template-Info.plist"; sourceTree = "<group>"; };
 		84CACFB11BD6D37E00B41FBF /* SSDT-UIAC.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC.dsl"; sourceTree = "<group>"; };
-		ED08A7BB208A1697005A9DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-300-series-injector.kext/Contents/Info.plist"; sourceTree = "<group>"; };
 		ED0AD3E11BD725DC00B36B4B /* config_patches.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config_patches.plist; sourceTree = "<group>"; };
 		ED36B7881BD74CBA0020DE23 /* SSDT-XOSI.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-XOSI.dsl"; sourceTree = "<group>"; };
 		ED8AAA3E1CB5E5B1000C0B38 /* SSDT-UIAC-ALL.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC-ALL.dsl"; sourceTree = "<group>"; };
-		ED90BC931E3A57DD008DB3AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-200-series-injector.kext/Contents/Info.plist"; sourceTree = "<group>"; };
+		ED9CDF7A2174B738001EE843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-unsupported.kext/Contents/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +54,7 @@
 				84B173A51BD6BEF200FF8553 /* strstr.cpp */,
 				84C4CE491BD5EF14003BC8FE /* Info.plist Generation */,
 				0C4B238314598AD20080D960 /* USBInjectAll */,
-				846DBDD21BD70B6A00F1139C /* XHCI-x99-injector.kext */,
-				ED90BC921E3A57B5008DB3AA /* XHCI-200-series-injector.kext */,
-				ED08A7BA208A163E005A9DBE /* XHCI-300-series-injector.kext */,
+				ED9CDF792174B704001EE843 /* XHCI-unsupported.kext */,
 				0C4B238014598AD20080D960 /* Frameworks */,
 				0C4B237F14598AD20080D960 /* Products */,
 			);
@@ -107,14 +103,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		846DBDD21BD70B6A00F1139C /* XHCI-x99-injector.kext */ = {
-			isa = PBXGroup;
-			children = (
-				846DBDD11BD70B6200F1139C /* Info.plist */,
-			);
-			name = "XHCI-x99-injector.kext";
-			sourceTree = "<group>";
-		};
 		84C4CE481BD5ED0E003BC8FE /* Generated Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,20 +122,12 @@
 			name = "Info.plist Generation";
 			sourceTree = "<group>";
 		};
-		ED08A7BA208A163E005A9DBE /* XHCI-300-series-injector.kext */ = {
+		ED9CDF792174B704001EE843 /* XHCI-unsupported.kext */ = {
 			isa = PBXGroup;
 			children = (
-				ED08A7BB208A1697005A9DBE /* Info.plist */,
+				ED9CDF7A2174B738001EE843 /* Info.plist */,
 			);
-			name = "XHCI-300-series-injector.kext";
-			sourceTree = "<group>";
-		};
-		ED90BC921E3A57B5008DB3AA /* XHCI-200-series-injector.kext */ = {
-			isa = PBXGroup;
-			children = (
-				ED90BC931E3A57DD008DB3AA /* Info.plist */,
-			);
-			name = "XHCI-200-series-injector.kext";
+			name = "XHCI-unsupported.kext";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +265,7 @@
 				LLVM_LTO = NO;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULE_VERSION = 0.6.8;
+				MODULE_VERSION = 0.6.9;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				SDKROOT = macosx10.11;
@@ -311,7 +291,7 @@
 				LLVM_LTO = NO;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULE_VERSION = 0.6.8;
+				MODULE_VERSION = 0.6.9;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				SDKROOT = macosx10.11;

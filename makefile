@@ -48,6 +48,8 @@ distribute:
 	mkdir ./Distribute
 	cp -R $(BUILDDIR)/Debug ./Distribute
 	cp -R $(BUILDDIR)/Release ./Distribute
+	cp README.md ./Distribute
+	cp License.md ./Distribute
 	find ./Distribute -path *.DS_Store -delete
 	find ./Distribute -path *.dSYM -exec echo rm -r {} \; >/tmp/org.voodoo.rm.dsym.sh
 	chmod +x /tmp/org.voodoo.rm.dsym.sh

@@ -13,7 +13,20 @@
 		<key>model</key>
 		<string>model_placeholder</string>
 		<key>kConfigurationName</key>
-		<string>AppleBusPowerControllerUSB</string>
+		<string>AppleBusPowerController</string>
+	</dict>
+	<key>model_placeholder-AppeBusPowerController</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>${MODULE_NAME}</string>
+		<key>IOClass</key>
+		<string>org_rehabman_USBInjectAll</string>
+		<key>IOProviderClass</key>
+		<string>AppleBusPowerController</string>
+		<key>model</key>
+		<string>model_placeholder</string>
+		<key>kConfigurationName</key>
+		<string>AppleBusPowerController</string>
 	</dict>
 	<key>model_placeholder-EH01</key>
 	<dict>
