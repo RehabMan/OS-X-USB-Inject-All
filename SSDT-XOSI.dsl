@@ -8,7 +8,7 @@
 // patch in config.plist/ACPI/DSDT/Patches (see config_patches.plist)
 //
 
-DefinitionBlock ("", "SSDT", 2, "hack", "XOSI", 0)
+DefinitionBlock ("", "SSDT", 2, "hack", "_XOSI", 0)
 {
     // All _OSI calls in DSDT are routed to XOSI...
     // XOSI simulates "Windows 2012" (which is Windows 8)

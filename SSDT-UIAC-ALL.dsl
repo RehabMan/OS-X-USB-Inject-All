@@ -16,7 +16,7 @@
 // portType=4 is used by MacBookPro8,3 (reason/purpose unknown)
 //
 
-DefinitionBlock ("", "SSDT", 2, "hack", "UIAC-ALL", 0)
+DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
 {
     Device(UIAC)
     {
