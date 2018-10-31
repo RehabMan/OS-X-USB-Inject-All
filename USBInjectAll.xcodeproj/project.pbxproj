@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		849921901600F4FC00CCDF3B /* USBInjectAll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8499218E1600F4FC00CCDF3B /* USBInjectAll.cpp */; };
 		849921911600F4FC00CCDF3B /* USBInjectAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 8499218F1600F4FC00CCDF3B /* USBInjectAll.h */; };
+		EDF7E2D9218A289A00A059C3 /* strstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B173A51BD6BEF200FF8553 /* strstr.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -237,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849921901600F4FC00CCDF3B /* USBInjectAll.cpp in Sources */,
+				EDF7E2D9218A289A00A059C3 /* strstr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +267,7 @@
 				LLVM_LTO = NO;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULE_VERSION = 0.6.9;
+				MODULE_VERSION = 0.7.0;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				SDKROOT = macosx10.11;
@@ -291,7 +293,7 @@
 				LLVM_LTO = NO;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULE_VERSION = 0.6.9;
+				MODULE_VERSION = 0.7.0;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				SDKROOT = macosx10.11;

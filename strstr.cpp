@@ -45,9 +45,9 @@
  *----------------------------------------------------------------------
  */
 
-char* hack_strstr(char* string, const char* substring)
+const char* hack_strstr(const char* string, const char* substring)
 {
-    char *a;
+    const char *a;
     const char *b;
 
     /* First scan quickly through the two strings looking for a

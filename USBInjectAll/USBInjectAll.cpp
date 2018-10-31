@@ -34,6 +34,7 @@ void* _org_rehabman_dontstrip_[] =
 };
 
 static char g_exclude[256];
+static char g_include[256];
 static bool g_ignore_rmcf;
 static bool g_exclude_xhc;
 
@@ -134,7 +135,7 @@ static inline bool isDelimiter(char test)
     return ',' == test || ';' == test;
 }
 
-static void filterPorts(OSDictionary* ports, const char* filter)
+static void filterPorts(OSDictionary* ports, const char* filter, const char* keep)
 {
     // filter is port names delimited by comma
     for (const char* p = filter; *p; )
@@ -145,8 +146,11 @@ static void filterPorts(OSDictionary* ports, const char* filter)
         for (; count && *p && !isDelimiter(*p); --count)
             *dest++ = *p++;
         *dest = 0;
-        DebugLog("removing port '%s'\n", key);
-        ports->removeObject(key);
+        if (!hack_strstr(keep, key))
+        {
+            DebugLog("removing port '%s'\n", key);
+            ports->removeObject(key);
+        }
         if (isDelimiter(*p)) ++p;
     }
 }
@@ -167,13 +171,13 @@ OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
     // filter based on uia_exclude, -uia_exclude_hs, -uia_exclude_ss, -uia_exclude_ssp
     if (OSDictionary* ports = OSDynamicCast(OSDictionary, injectCopy->getObject("ports")))
     {
-        filterPorts(ports, g_exclude);
+        filterPorts(ports, g_exclude, g_include);
         if (g_exclude_hs)
-            filterPorts(ports, g_exclude_hs);
+            filterPorts(ports, g_exclude_hs, g_include);
         if (g_exclude_ss)
-            filterPorts(ports, g_exclude_ss);
+            filterPorts(ports, g_exclude_ss, g_include);
         if (g_exclude_ssp)
-            filterPorts(ports, g_exclude_ssp);
+            filterPorts(ports, g_exclude_ssp, g_include);
     }
 
     return injectCopy;
@@ -267,6 +271,9 @@ bool USBInjectAll_config::start(IOService* provider)
 
     if (PE_parse_boot_argn("uia_exclude", g_exclude, sizeof g_exclude))
         AlwaysLog("uia_exclude specifies '%s'\n", g_exclude);
+
+    if (PE_parse_boot_argn("uia_include", g_include, sizeof g_include))
+        AlwaysLog("uia_include specifies '%s'\n", g_include);
 
     uint32_t flag;
 
@@ -425,11 +432,9 @@ OSObject* USBInjectAll_config::translateArray(OSArray* array)
         for (int i = 0; i < count; i += 2)
         {
             OSString* key = OSDynamicCast(OSString, array->getObject(i));
+            // ignore empty entries which can occur at the end of an oversized package
             if (!key)
-            {
-                dict->release();
-                return NULL;
-            }
+                continue;
             // get value, use translated value if translated
             OSObject* obj = array->getObject(i+1);
             OSObject* trans = translateEntry(obj);
