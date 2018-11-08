@@ -38,12 +38,10 @@
 #define DebugLog(args...) do { } while(0)
 #endif
 
-#define USBInjectAll org_rehabman_USBInjectAll
-
 class EXPORT USBInjectAll : public IOService
 {
     typedef IOService super;
-	OSDeclareDefaultStructors(org_rehabman_USBInjectAll)
+	OSDeclareDefaultStructors(USBInjectAll)
 
 public:
     virtual IOService* probe(IOService* provider, SInt32* score);
@@ -54,12 +52,10 @@ protected:
     void injectProperties(IOService* provider, OSDictionary* inject, bool force);
 };
 
-#define USBInjectAll_config org_rehabman_USBInjectAll_config
-
 class EXPORT USBInjectAll_config : public IOService
 {
     typedef IOService super;
-    OSDeclareDefaultStructors(org_rehabman_USBInjectAll_config)
+    OSDeclareDefaultStructors(USBInjectAll_config)
 
 public:
     virtual bool start(IOService* provider);

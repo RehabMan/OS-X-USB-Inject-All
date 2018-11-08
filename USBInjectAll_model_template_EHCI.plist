@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>model_placeholder-EHCI</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>${MODULE_NAME}</string>
+		<key>IOClass</key>
+		<string>USBInjectAll</string>
+		<key>IONameMatch</key>
+		<array>
+			<string>EH01</string>
+			<string>EH02</string>
+		</array>
+		<key>IOProviderClass</key>
+		<string>AppleUSBEHCIPCI</string>
+		<key>model</key>
+		<string>model_placeholder</string>
+	</dict>
+	<key>model_placeholder-HUB1</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>${MODULE_NAME}</string>
+		<key>IOClass</key>
+		<string>USBInjectAll</string>
+		<key>IOProviderClass</key>
+		<string>AppleUSB20InternalHub</string>
+		<key>locationID</key>
+		<integer>487587840</integer>
+		<key>IOProbeScore</key>
+		<integer>5000</integer>
+		<key>model</key>
+		<string>model_placeholder</string>
+		<key>kName</key>
+		<string>HUB1</string>
+	</dict>
+	<key>model_placeholder-HUB2</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>${MODULE_NAME}</string>
+		<key>IOClass</key>
+		<string>USBInjectAll</string>
+		<key>IOProviderClass</key>
+		<string>AppleUSB20InternalHub</string>
+		<key>locationID</key>
+		<integer>437256192</integer>
+		<key>IOProbeScore</key>
+		<integer>5000</integer>
+		<key>model</key>
+		<string>model_placeholder</string>
+		<key>kName</key>
+		<string>HUB2</string>
+	</dict>
+</dict>
+</plist>

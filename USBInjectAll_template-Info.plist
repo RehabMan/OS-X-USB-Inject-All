@@ -31,9 +31,9 @@
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
 			<key>IOClass</key>
-			<string>org_rehabman_USBInjectAll_config</string>
+			<string>USBInjectAll_config</string>
 			<key>IOMatchCategory</key>
-			<string>org_rehabman_USBInjectAll_config</string>
+			<string>USBInjectAll_config</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
 			<key>Configuration</key>
@@ -448,42 +448,42 @@
 							<key>port</key>
 							<data>DgAAAA==</data>
 						</dict>
-						<key>SSP1</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EAAAAA==</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EQAAAA==</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EgAAAA==</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>EwAAAA==</data>
 						</dict>
-						<key>SSP5</key>
+						<key>SS05</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>FAAAAA==</data>
 						</dict>
-						<key>SSP6</key>
+						<key>SS06</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>

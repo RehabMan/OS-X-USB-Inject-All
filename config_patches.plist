@@ -97,18 +97,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (credit FredWst)</string>
-				<key>MatchOS</key>
-				<string>10.13.4,10.13.5</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>g32UDw+DlwQ=</data>
-				<key>Replace</key>
-				<data>g32UGg+DlwQ=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit RehabMan, based prior PMHeart patch)</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
@@ -123,11 +111,23 @@
 				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.14.0</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Find</key>
 				<data>g/sPD4MDBQAA</data>
+				<key>Replace</key>
+				<data>g/sPkJCQkJCQ</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>disable port limit in XHCI kext (credit DalianSky,Ricky)</string>
+				<key>MatchOS</key>
+				<string>10.14.1,10.14.2</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>g/sPD4OPBAAA</data>
 				<key>Replace</key>
 				<data>g/sPkJCQkJCQ</data>
 			</dict>

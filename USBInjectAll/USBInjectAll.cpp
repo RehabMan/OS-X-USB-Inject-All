@@ -44,9 +44,9 @@ static char* g_exclude_ssp;
 
 static char g_exclude_hs_static[] = "HS01,HS02,HS03,HS04,HS05,HS06,HS07,HS08,HS09,HS10,HS11,HS12,HS13,HS14";
 static char g_exclude_ss_static[] = "SS01,SS02,SS03,SS04,SS05,SS06,SS07,SS08,SS09,SS10";
-static char g_exclude_ssp_static[] = "SSP1,SSP2,SSP3,SSP4,SSP5,SSP6";
+static char g_exclude_ssp_static[] = "SSP1,SSP2,SSP3,SSP4,SSP5,SSP6,SSP7,SSP8";
 
-OSDefineMetaClassAndStructors(org_rehabman_USBInjectAll, IOService)
+OSDefineMetaClassAndStructors(USBInjectAll, IOService)
 
 static IOPCIDevice* getPCIDevice(IORegistryEntry* registryEntry)
 {
@@ -67,7 +67,7 @@ static IOPCIDevice* getPCIDevice(IORegistryEntry* registryEntry)
 
 OSDictionary* USBInjectAll::getConfigurationForController(UInt16 vendor, UInt16 device)
 {
-    USBInjectAll_config* configService = OSDynamicCast(USBInjectAll_config, waitForMatchingService(serviceMatching("org_rehabman_USBInjectAll_config")));
+    USBInjectAll_config* configService = OSDynamicCast(USBInjectAll_config, waitForMatchingService(serviceMatching("USBInjectAll_config")));
     if (!configService)
     {
         AlwaysLog("USBInjectAll configuration service not available\n");
@@ -85,7 +85,12 @@ OSDictionary* USBInjectAll::getConfigurationForController(UInt16 vendor, UInt16 
     OSDictionary* result = NULL;
 
     // try ConfigurationName from our own configuration
-    if (OSString* configName = OSDynamicCast(OSString, getProperty("kConfigurationName")))
+    if (OSString* configName = OSDynamicCast(OSString, getProperty("kName")))
+    {
+        DebugLog("trying '%s'\n", configName->getCStringNoCopy());
+        result = OSDynamicCast(OSDictionary, dict->getObject(configName));
+    }
+    else if (OSString* configName = OSDynamicCast(OSString, getProperty("IONameMatched")))
     {
         DebugLog("trying '%s'\n", configName->getCStringNoCopy());
         result = OSDynamicCast(OSDictionary, dict->getObject(configName));
@@ -218,6 +223,9 @@ IOService* USBInjectAll::probe(IOService* provider, SInt32* score)
     // don't inject on XHC when -uia_exclude_xhc is specified
     if (g_exclude_xhc)
     {
+        OSString* matched = OSDynamicCast(OSString, getProperty("IONameMatched"));
+        if (matched && 0 == strncmp(matched->getCStringNoCopy(), "XHC", 3))
+            return NULL;
         OSBoolean* isXHC = OSDynamicCast(OSBoolean, getProperty("kIsXHC"));
         if (isXHC && isXHC->isTrue())
             return NULL;
@@ -240,6 +248,8 @@ IOService* USBInjectAll::probe(IOService* provider, SInt32* score)
 
 #ifdef DEBUG
     provider->setProperty("RM,Configuration.Merged", inject);
+    if (auto ioNameMatched = getProperty("IONameMatched"))
+        provider->setProperty("RM,IONameMatched", ioNameMatched);
 #endif
     // inject the configuration on the provider
     injectProperties(provider, inject, true);
@@ -250,7 +260,7 @@ IOService* USBInjectAll::probe(IOService* provider, SInt32* score)
 }
 
 
-OSDefineMetaClassAndStructors(org_rehabman_USBInjectAll_config, IOService)
+OSDefineMetaClassAndStructors(USBInjectAll_config, IOService)
 
 bool USBInjectAll_config::start(IOService* provider)
 {

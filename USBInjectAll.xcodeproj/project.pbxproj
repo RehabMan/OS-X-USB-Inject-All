@@ -28,6 +28,7 @@
 		84CACFB11BD6D37E00B41FBF /* SSDT-UIAC.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC.dsl"; sourceTree = "<group>"; };
 		ED0AD3E11BD725DC00B36B4B /* config_patches.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config_patches.plist; sourceTree = "<group>"; };
 		ED36B7881BD74CBA0020DE23 /* SSDT-XOSI.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-XOSI.dsl"; sourceTree = "<group>"; };
+		ED5E980621939BE8006D6218 /* USBInjectAll_model_template_EHCI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USBInjectAll_model_template_EHCI.plist; sourceTree = "<group>"; };
 		ED8AAA3E1CB5E5B1000C0B38 /* SSDT-UIAC-ALL.dsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SSDT-UIAC-ALL.dsl"; sourceTree = "<group>"; };
 		ED9CDF7A2174B738001EE843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "XHCI-unsupported.kext/Contents/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +120,7 @@
 				84C4CE421BD5EC37003BC8FE /* generate_Info_plist.sh */,
 				84C4CE441BD5EC37003BC8FE /* USBInjectAll_template-Info.plist */,
 				84C4CE431BD5EC37003BC8FE /* USBInjectAll_model_template.plist */,
+				ED5E980621939BE8006D6218 /* USBInjectAll_model_template_EHCI.plist */,
 			);
 			name = "Info.plist Generation";
 			sourceTree = "<group>";
@@ -267,7 +269,7 @@
 				LLVM_LTO = NO;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULE_VERSION = 0.7.0;
+				MODULE_VERSION = 0.7.1;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				SDKROOT = macosx10.11;
@@ -293,7 +295,7 @@
 				LLVM_LTO = NO;
 				"LLVM_LTO[arch=x86_64]" = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULE_VERSION = 0.7.0;
+				MODULE_VERSION = 0.7.1;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
 				SDKROOT = macosx10.11;

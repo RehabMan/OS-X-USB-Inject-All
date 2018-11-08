@@ -329,32 +329,32 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                         "port", Buffer() { 14, 0, 0, 0 },
                     },
                     //HS15 is phantom port (port address 15 not used)
-                    "SSP1", Package()
+                    "SS01", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 16, 0, 0, 0 },
                     },
-                    "SSP2", Package()
+                    "SS02", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 17, 0, 0, 0 },
                     },
-                    "SSP3", Package()
+                    "SS03", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 18, 0, 0, 0 },
                     },
-                    "SSP4", Package()
+                    "SS04", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 19, 0, 0, 0 },
                     },
-                    "SSP5", Package()
+                    "SS05", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 20, 0, 0, 0 },
                     },
-                    "SSP6", Package()
+                    "SS06", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 21, 0, 0, 0 },
