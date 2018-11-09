@@ -74,7 +74,7 @@
 							BAAAAA==
 							</data>
 						</dict>
-						<key>SSP5</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -83,7 +83,7 @@
 							BQAAAA==
 							</data>
 						</dict>
-						<key>SSP6</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -92,7 +92,7 @@
 							BgAAAA==
 							</data>
 						</dict>
-						<key>SSP7</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -101,7 +101,7 @@
 							BwAAAA==
 							</data>
 						</dict>
-						<key>SSP8</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -409,7 +409,7 @@
 							CwAAAA==
 							</data>
 						</dict>
-						<key>SSP1</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -418,7 +418,7 @@
 							DAAAAA==
 							</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -427,7 +427,7 @@
 							DQAAAA==
 							</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -436,7 +436,7 @@
 							DgAAAA==
 							</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -708,7 +708,7 @@
 							CQAAAA==
 							</data>
 						</dict>
-						<key>SSP1</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -717,7 +717,7 @@
 							CgAAAA==
 							</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -726,7 +726,7 @@
 							CwAAAA==
 							</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -735,7 +735,7 @@
 							DAAAAA==
 							</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>

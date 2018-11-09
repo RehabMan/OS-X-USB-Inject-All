@@ -314,28 +314,28 @@
 							<key>port</key>
 							<data>BAAAAA==</data>
 						</dict>
-						<key>SSP5</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>BQAAAA==</data>
 						</dict>
-						<key>SSP6</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>BgAAAA==</data>
 						</dict>
-						<key>SSP7</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>BwAAAA==</data>
 						</dict>
-						<key>SSP8</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -561,28 +561,28 @@
 							<key>port</key>
 							<data>CQAAAA==</data>
 						</dict>
-						<key>SSP1</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>CgAAAA==</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>CwAAAA==</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>DAAAAA==</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
@@ -674,28 +674,28 @@
 							<key>port</key>
 							<data>CwAAAA==</data>
 						</dict>
-						<key>SSP1</key>
+						<key>SS01</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>DAAAAA==</data>
 						</dict>
-						<key>SSP2</key>
+						<key>SS02</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>DQAAAA==</data>
 						</dict>
-						<key>SSP3</key>
+						<key>SS03</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>
 							<key>port</key>
 							<data>DgAAAA==</data>
 						</dict>
-						<key>SSP4</key>
+						<key>SS04</key>
 						<dict>
 							<key>UsbConnector</key>
 							<integer>3</integer>

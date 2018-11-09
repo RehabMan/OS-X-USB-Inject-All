@@ -40,11 +40,9 @@ static bool g_exclude_xhc;
 
 static char* g_exclude_hs;
 static char* g_exclude_ss;
-static char* g_exclude_ssp;
 
 static char g_exclude_hs_static[] = "HS01,HS02,HS03,HS04,HS05,HS06,HS07,HS08,HS09,HS10,HS11,HS12,HS13,HS14";
 static char g_exclude_ss_static[] = "SS01,SS02,SS03,SS04,SS05,SS06,SS07,SS08,SS09,SS10";
-static char g_exclude_ssp_static[] = "SSP1,SSP2,SSP3,SSP4,SSP5,SSP6,SSP7,SSP8";
 
 OSDefineMetaClassAndStructors(USBInjectAll, IOService)
 
@@ -173,7 +171,7 @@ OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
         return NULL;
     }
 
-    // filter based on uia_exclude, -uia_exclude_hs, -uia_exclude_ss, -uia_exclude_ssp
+    // filter based on uia_exclude, -uia_exclude_hs, -uia_exclude_ss
     if (OSDictionary* ports = OSDynamicCast(OSDictionary, injectCopy->getObject("ports")))
     {
         filterPorts(ports, g_exclude, g_include);
@@ -181,8 +179,6 @@ OSDictionary* USBInjectAll::getConfiguration(UInt16 vendor, UInt16 device)
             filterPorts(ports, g_exclude_hs, g_include);
         if (g_exclude_ss)
             filterPorts(ports, g_exclude_ss, g_include);
-        if (g_exclude_ssp)
-            filterPorts(ports, g_exclude_ssp, g_include);
     }
 
     return injectCopy;
@@ -297,12 +293,6 @@ bool USBInjectAll_config::start(IOService* provider)
     {
         g_exclude_ss = g_exclude_ss_static;
         AlwaysLog("-uia_exclude_ss specifies '%s'\n", g_exclude_ss);
-    }
-
-    if (PE_parse_boot_argn("-uia_exclude_ssp", &flag, sizeof flag))
-    {
-        g_exclude_ssp = g_exclude_ssp_static;
-        AlwaysLog("-uia_exclude_ssp specifies '%s'\n", g_exclude_ssp);
     }
 
     if (PE_parse_boot_argn("-uia_ignore_rmcf", &flag, sizeof flag))

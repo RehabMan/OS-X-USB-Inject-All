@@ -231,22 +231,22 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                         "UsbConnector", 3,
                         "port", Buffer() { 4, 0, 0, 0 },
                     },
-                    "SSP5", Package()
+                    "SS01", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 5, 0, 0, 0 },
                     },
-                    "SSP6", Package()
+                    "SS02", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 6, 0, 0, 0 },
                     },
-                    "SSP7", Package()
+                    "SS03", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 7, 0, 0, 0 },
                     },
-                    "SSP8", Package()
+                    "SS04", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 8, 0, 0, 0 },
@@ -411,22 +411,22 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                         "UsbConnector", 3,
                         "port", Buffer() { 9, 0, 0, 0 },
                     },
-                    "SSP1", Package()
+                    "SS01", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 10, 0, 0, 0 },
                     },
-                    "SSP2", Package()
+                    "SS02", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 11, 0, 0, 0 },
                     },
-                    "SSP3", Package()
+                    "SS03", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 12, 0, 0, 0 },
                     },
-                    "SSP4", Package()
+                    "SS04", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 13, 0, 0, 0 },
@@ -493,22 +493,22 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
                         "UsbConnector", 3,
                         "port", Buffer() { 11, 0, 0, 0 },
                     },
-                    "SSP1", Package()
+                    "SS01", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 12, 0, 0, 0 },
                     },
-                    "SSP2", Package()
+                    "SS02", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 13, 0, 0, 0 },
                     },
-                    "SSP3", Package()
+                    "SS03", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 14, 0, 0, 0 },
                     },
-                    "SSP4", Package()
+                    "SS04", Package()
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 15, 0, 0, 0 },
