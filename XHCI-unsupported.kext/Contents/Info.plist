@@ -73,23 +73,6 @@
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 		</dict>
-		<key>AppleUSBXHCISPT 300</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-			<key>IOClass</key>
-			<string>AppleUSBXHCISPT</string>
-			<key>IOPCIPauseCompatible</key>
-			<true/>
-			<key>IOPCIPrimaryMatch</key>
-			<string>0x9ded8086 0xa36d8086</string>
-			<key>IOPCITunnelCompatible</key>
-			<true/>
-			<key>IOProbeScore</key>
-			<integer>900</integer>
-			<key>IOProviderClass</key>
-			<string>IOPCIDevice</string>
-		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Root</string>
