@@ -6239,6 +6239,35 @@
 			<key>model</key>
 			<string>iMac19,1</string>
 		</dict>
+		<key>iMac19,2-ABPC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.rehabman.driver.USBInjectAll</string>
+			<key>IOClass</key>
+			<string>USBInjectAll</string>
+			<key>IOProviderClass</key>
+			<string>AppleBusPowerController</string>
+			<key>kName</key>
+			<string>AppleBusPowerController</string>
+			<key>model</key>
+			<string>iMac19,2</string>
+		</dict>
+		<key>iMac19,2-XHC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.rehabman.driver.USBInjectAll</string>
+			<key>IOClass</key>
+			<string>USBInjectAll</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>XHC</string>
+				<string>XHCI</string>
+			</array>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>model</key>
+			<string>iMac19,2</string>
+		</dict>
 		<key>iMac4,1-ABPC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
