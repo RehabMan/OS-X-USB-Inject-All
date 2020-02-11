@@ -13,7 +13,12 @@ ifeq ($(findstring 64,$(BITS)),64)
 OPTIONS:=$(OPTIONS) -arch x86_64
 endif
 
-OPTIONS:=$(OPTIONS) -scheme USBInjectAll
+# default to symlink
+ifeq ($(SDKDIR),)
+SDKDIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+endif
+
+OPTIONS:=$(OPTIONS) -scheme USBInjectAll -sdk $(SDKDIR)
 
 .PHONY: all
 all:
